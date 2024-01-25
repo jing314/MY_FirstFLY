@@ -23,22 +23,13 @@
 #include "esp_netif.h"
 #include "lwip/sockets.h"
 
+#include "APP.h"
 /* The examples use WiFi configuration that you can set via project configuration menu
 
    If you'd rather not, just change the below entries to strings with
    the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
 */
-#define MYFLY_PWM1_IONUM 47
-#define MYFLY_PWM2_IONUM 33
-#define MYFLY_PWM3_IONUM 34
-#define MYFLY_PWM4_IONUM 48
 
-#define MYFLY_IICSCL_IONUM 1
-#define MYFLY_IICSDA_IONUM 2
-
-#define MYFLY_LED1_IONUM 6
-#define MYFLY_LED2_IONUM 5
-#define MYFLY_LED3_IONUM 7
 
 #define EXAMPLE_ESP_WIFI_SSID      "2128"
 #define EXAMPLE_ESP_WIFI_PASS      "147258369"

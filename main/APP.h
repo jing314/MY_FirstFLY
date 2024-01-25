@@ -1,5 +1,19 @@
 #ifndef __GORAL_VALUE_H__
 #define __GORAL_VALUE_H__
+//宏定义区
+#define MYFLY_PWM1_IONUM 47
+#define MYFLY_PWM2_IONUM 33
+#define MYFLY_PWM3_IONUM 34
+#define MYFLY_PWM4_IONUM 48
+
+#define MYFLY_IICSCL_IONUM 1
+#define MYFLY_IICSDA_IONUM 2
+
+#define MYFLY_LED1_IONUM 6
+#define MYFLY_LED2_IONUM 5
+#define MYFLY_LED3_IONUM 7
+
+
 //结构体定义区
 typedef struct
 {

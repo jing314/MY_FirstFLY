@@ -1,5 +1,10 @@
 #include "mpu6050.h"
-
+#define I2C_MASTER_NUM          1U
+#define I2C_MASTER_SDA_IO   MYFLY_IICSDA_IONUM
+#define I2C_MASTER_SCL_IO   MYFLY_IICSCL_IONUM
+#define I2C_MASTER_FREQ_HZ      40
+#define I2C_MASTER_RX_BUF_DISABLE   8
+#define I2C_MASTER_TX_BUF_DISABLE   8
 static esp_err_t i2c_master_init(void)
 {
     int i2c_master_port = I2C_MASTER_NUM;
