@@ -11,5 +11,4 @@ void PidStructInit4(void);
 void GetPidOutputValue(float curvalue,float setpoint,PidValueStruct *pidstruct);
 
 
-
 #endif
