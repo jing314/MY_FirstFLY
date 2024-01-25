@@ -5,7 +5,8 @@
 #define I2C_MASTER_FREQ_HZ      40
 #define I2C_MASTER_RX_BUF_DISABLE   8
 #define I2C_MASTER_TX_BUF_DISABLE   8
-static esp_err_t i2c_master_init(void)
+
+esp_err_t i2c_master_init(void)
 {
     int i2c_master_port = I2C_MASTER_NUM;
 
