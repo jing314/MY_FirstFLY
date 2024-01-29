@@ -12,7 +12,7 @@
 #define MYFLY_LED1_IONUM 6
 #define MYFLY_LED2_IONUM 5
 #define MYFLY_LED3_IONUM 7
-
+#define CONFIG_FREERTOS_HZ 100
 
 //结构体定义区
 typedef struct
