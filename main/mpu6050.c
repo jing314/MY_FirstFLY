@@ -25,7 +25,7 @@ esp_err_t i2c_master_init(void)
     return i2c_driver_install(i2c_master_port, conf.mode, I2C_MASTER_RX_BUF_DISABLE, I2C_MASTER_TX_BUF_DISABLE, 0);
 }
 
-void mpu6050_reg_read(uint8_t reg,uint8_t *data){
+uint8_t mpu6050_reg_read(uint8_t reg,uint8_t *data){
     esp_err_t err;
     i2c_cmd_handle_t read_cmd = i2c_cmd_link_create();
     i2c_master_start(read_cmd);//开始标识
@@ -55,7 +55,7 @@ void mpu6050_reg_read(uint8_t reg,uint8_t *data){
 uint8_t mpu6050_reg_write(uint8_t reg,uint8_t data)
 {
     esp_err_t err;
-    i2c_cmd_handle_t write_cmd;
+    i2c_cmd_handle_t write_cmd = i2c_cmd_link_create();
     i2c_master_start(write_cmd);//开始标识
     err = i2c_master_write_byte(write_cmd,(MPU6050_IICADDR << 1)|I2C_MASTER_WRITE,true);//确定地址
     if(err != ESP_OK){

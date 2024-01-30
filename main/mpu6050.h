@@ -19,7 +19,7 @@
 #define MPU6050_GYR_Z   0x47//绕Z轴旋转的角速度GYR_Z
 
 
-void mpu6050_reg_read(uint8_t reg,uint8_t *data);
+uint8_t mpu6050_reg_read(uint8_t reg,uint8_t *data);
 uint8_t mpu6050_reg_write(uint8_t reg,uint8_t data);
 void mpu6050_init(void);
 
